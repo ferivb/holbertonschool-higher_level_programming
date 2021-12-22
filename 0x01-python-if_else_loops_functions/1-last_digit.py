@@ -8,7 +8,7 @@ if (number < 0):
 else:
     ldigit = (number % 10)
 
-print('the last digit of {} is {} and is '.format(number, ldigit), end="")
+print('Last digit of {} is {} and is '.format(number, ldigit), end="")
 
 if (ldigit == 0):
     print('zero')
