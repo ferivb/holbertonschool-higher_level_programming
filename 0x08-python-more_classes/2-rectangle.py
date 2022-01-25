@@ -9,12 +9,12 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
-    
+
     @property
     def width(self):
         """Private getter for Rectangle's width"""
         return (self.__width)
-    
+
     @width.setter
     def width(self, value):
         """This sets the value for width"""
@@ -42,7 +42,7 @@ class Rectangle:
 
     def area(self):
         return self.__width * self.__height
-    
+
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
             return 0
