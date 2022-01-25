@@ -5,11 +5,13 @@
 class Rectangle:
     """Class Rectangle: takes width and height.
     Can be deleted, has a counter of instances"""
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Constructor and instance counter"""
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -68,5 +70,7 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Destroys the instance, and prints a message"""
+        """Destroys the instance, decreases instance counter and
+        prints a message"""
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
