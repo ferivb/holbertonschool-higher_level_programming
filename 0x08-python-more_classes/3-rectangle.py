@@ -53,6 +53,9 @@ class Rectangle:
 
     def __str__(self):
         """Method to return Rectangle's graphical representation using '#'"""
-        row = self.__width * "#"
-        drawing = (row + "\n") * self.__height
-        return drawing
+        if self.__width == 0 or self.__height == 0:
+            return("")
+        else:
+            row = self.__width * "#"
+            drawing = (row + "\n") * self.__height
+            return drawing
