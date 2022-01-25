@@ -57,5 +57,7 @@ class Rectangle:
             return("")
         else:
             row = self.__width * "#"
-            drawing = (row + "\n") * self.__height
+            drawing = row
+            for i in range(self.__height - 1):
+                drawing += "\n" + row 
             return drawing
