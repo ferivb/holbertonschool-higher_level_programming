@@ -12,7 +12,6 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 filename = "add_item.json"
 " Create the object or empty list "
 try:
-    file = open(filename, 'r')
     object = load_from_json_file(filename)
 except Exception:
     object = []
