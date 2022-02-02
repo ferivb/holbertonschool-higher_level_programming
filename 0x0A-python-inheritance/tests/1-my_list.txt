@@ -7,10 +7,9 @@ Class MyList inherits from list
 - Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
 - You can assume that all the elements of the list will be of type int
 
-Import module:
+First import ``MyList`` from the ``1-my_list`` module:
 
-    >>> MyList = __import__('1-my_list').MyList
-
+    >>> MyList = __import__("1-my_list").MyList
 
 Documentation
 =============
