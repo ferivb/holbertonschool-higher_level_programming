@@ -91,6 +91,7 @@ class Rectangle(Base):
                                                        self.width, self.height)
 
     def update(self, *args):
+        """Updates the rectangle with the provided args"""
         if len(args) != 0:
             for i in range(len(args)):
                 if i == 0:
